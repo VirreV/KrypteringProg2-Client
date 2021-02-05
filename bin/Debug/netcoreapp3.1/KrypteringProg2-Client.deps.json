@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "KrypteringProg2-Client/1.0.0": {
+        "runtime": {
+          "KrypteringProg2-Client.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KrypteringProg2-Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

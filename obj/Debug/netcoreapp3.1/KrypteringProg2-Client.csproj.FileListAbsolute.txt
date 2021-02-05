@@ -1,0 +1,13 @@
+D:\GitRepositories\KrypteringProg2-Client\bin\Debug\netcoreapp3.1\KrypteringProg2-Client.exe
+D:\GitRepositories\KrypteringProg2-Client\bin\Debug\netcoreapp3.1\KrypteringProg2-Client.deps.json
+D:\GitRepositories\KrypteringProg2-Client\bin\Debug\netcoreapp3.1\KrypteringProg2-Client.runtimeconfig.json
+D:\GitRepositories\KrypteringProg2-Client\bin\Debug\netcoreapp3.1\KrypteringProg2-Client.runtimeconfig.dev.json
+D:\GitRepositories\KrypteringProg2-Client\bin\Debug\netcoreapp3.1\KrypteringProg2-Client.dll
+D:\GitRepositories\KrypteringProg2-Client\bin\Debug\netcoreapp3.1\KrypteringProg2-Client.pdb
+D:\GitRepositories\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg2-Client.csprojAssemblyReference.cache
+D:\GitRepositories\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg2-Client.csproj.CoreCompileInputs.cache
+D:\GitRepositories\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg2-Client.AssemblyInfoInputs.cache
+D:\GitRepositories\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg2-Client.AssemblyInfo.cs
+D:\GitRepositories\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg2-Client.dll
+D:\GitRepositories\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg2-Client.pdb
+D:\GitRepositories\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg2-Client.genruntimeconfig.cache
