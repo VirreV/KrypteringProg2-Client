@@ -79,10 +79,10 @@ namespace KrypteringProg2_Client
                             ChangeUserName(tcpClient);
                             break;
                         case 2:
-                            //ShowMyMsg();
+                            ShowMsg(tcpClient, "uMes");
                             break;
                         case 3:
-                            ShowAllMsg(tcpClient);
+                            ShowMsg(tcpClient, "sMes");
                             break;
                         default:
                             disconnect = true;
@@ -109,7 +109,8 @@ namespace KrypteringProg2_Client
             }catch(Exception e){Error(e);}
         }
 
-        static void ShowAllMsg(TcpClient tcpClient){
+        static void ShowMsg(TcpClient tcpClient, string key){
+            Console.Clear();
             NetworkStream tcpStream;
             try{
                 //Öppna NetworkStream till servern
@@ -122,10 +123,11 @@ namespace KrypteringProg2_Client
 
             try{
                 //Skicka byte-arrayen
-                tcpStream.Write(Encoding.ASCII.GetBytes("sMes"), 0, Encoding.ASCII.GetBytes("sMes").Length);
+                tcpStream.Write(Encoding.ASCII.GetBytes(key), 0, Encoding.ASCII.GetBytes(key).Length);
             }catch(Exception e){Error(e);}
             string answer = Listen(tcpClient);
             Console.WriteLine(answer);
+            Console.WriteLine();
             Console.WriteLine("Press enter to continue...");
             Console.ReadLine();
         }

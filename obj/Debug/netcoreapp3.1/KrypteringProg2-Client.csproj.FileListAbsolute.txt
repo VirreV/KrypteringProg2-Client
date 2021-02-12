@@ -11,3 +11,14 @@ D:\GitRepositories\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg
 D:\GitRepositories\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg2-Client.dll
 D:\GitRepositories\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg2-Client.pdb
 D:\GitRepositories\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg2-Client.genruntimeconfig.cache
+G:\Min enhet\GitHub Repository\KrypteringProg2-Client\bin\Debug\netcoreapp3.1\KrypteringProg2-Client.exe
+G:\Min enhet\GitHub Repository\KrypteringProg2-Client\bin\Debug\netcoreapp3.1\KrypteringProg2-Client.deps.json
+G:\Min enhet\GitHub Repository\KrypteringProg2-Client\bin\Debug\netcoreapp3.1\KrypteringProg2-Client.runtimeconfig.json
+G:\Min enhet\GitHub Repository\KrypteringProg2-Client\bin\Debug\netcoreapp3.1\KrypteringProg2-Client.runtimeconfig.dev.json
+G:\Min enhet\GitHub Repository\KrypteringProg2-Client\bin\Debug\netcoreapp3.1\KrypteringProg2-Client.dll
+G:\Min enhet\GitHub Repository\KrypteringProg2-Client\bin\Debug\netcoreapp3.1\KrypteringProg2-Client.pdb
+G:\Min enhet\GitHub Repository\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg2-Client.csprojAssemblyReference.cache
+G:\Min enhet\GitHub Repository\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg2-Client.AssemblyInfoInputs.cache
+G:\Min enhet\GitHub Repository\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg2-Client.AssemblyInfo.cs
+G:\Min enhet\GitHub Repository\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg2-Client.dll
+G:\Min enhet\GitHub Repository\KrypteringProg2-Client\obj\Debug\netcoreapp3.1\KrypteringProg2-Client.pdb
