@@ -12,8 +12,10 @@ namespace KrypteringProg2_Client
 {
     class Program
     {
+        static Encrypter encrypter;
         static void Main(string[] args)
         {
+            encrypter = new Encrypter();
             while(true){
                 //Etablerar variabler
                 bool connected = false;
@@ -126,7 +128,24 @@ namespace KrypteringProg2_Client
                 tcpStream.Write(Encoding.ASCII.GetBytes(key), 0, Encoding.ASCII.GetBytes(key).Length);
             }catch(Exception e){Error(e);}
             string answer = Listen(tcpClient);
-            Console.WriteLine(answer);
+            if(answer == "-"){
+                Console.WriteLine("No messegase were found!");
+            }
+            else{
+                List<string> user = new List<string>();
+                List<string> text = new List<string>();
+                while(true){
+                    try{
+                        user.Add(answer.Substring(0, answer.IndexOf('\t')));
+                        text.Add(answer.Substring(answer.IndexOf('\t') + 1, answer.IndexOf('\n')-answer.IndexOf('\t')));
+                        answer = answer.Substring(answer.IndexOf('\n') + 1);
+                    }catch{
+                        break;
+                    }
+                }
+                for(int i = 0; i < user.Count; i++)
+                Console.WriteLine("{0}:\n\t{1}", encrypter.Decrypt(user[i]), encrypter.Decrypt(text[i]));
+            }
             Console.WriteLine();
             Console.WriteLine("Press enter to continue...");
             Console.ReadLine();
@@ -147,7 +166,7 @@ namespace KrypteringProg2_Client
                 try{
                     Console.Write("Message: ");
                     //Mata in meddelande
-                    message = Console.ReadLine();
+                    message = encrypter.Encrypt(Console.ReadLine());
                     break;
                 }catch(Exception e){Error(e);}
             }
@@ -181,7 +200,7 @@ namespace KrypteringProg2_Client
                 try{
                     Console.Write("User: ");
                     //Mata in namn
-                    message = Console.ReadLine();
+                    message = encrypter.Encrypt(Console.ReadLine());
                     break;
                 }catch(Exception e){Error(e);}
             }
@@ -268,33 +287,6 @@ namespace KrypteringProg2_Client
             }
         }
         
-        static void Sender(TcpClient tcpClient)
-        {
-            while (true)
-            {
-                try
-                {
-                    NetworkStream tcpStream = tcpClient.GetStream();
-                    //Skriv in meddelande att skicka till severn
-                    string message = Console.ReadLine();
-                    if (message.ToLower() == "disconnect" || message.ToLower() == "-d")
-                    {
-                        tcpStream.Close();
-                        break;
-                    }
-                    Console.CursorTop -= 1;
-                    Console.WriteLine("You: " + message);
-                    byte[] bMessage = Encoding.ASCII.GetBytes(message);
-
-                    //Skicka meddelande
-                    tcpStream.Write(bMessage, 0, bMessage.Length);
-                }
-                catch (Exception e)
-                {
-                    Error(e);
-                }
-            }
-        }
         static void Error(Exception e)
         {
             Console.BackgroundColor = ConsoleColor.Red;

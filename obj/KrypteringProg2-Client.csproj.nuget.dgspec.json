@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Min enhet\\GitHub Repository\\KrypteringProg2-Client\\KrypteringProg2-Client.csproj": {}
+    "D:\\GitRepositories\\KrypteringProg2-Client\\KrypteringProg2-Client.csproj": {}
   },
   "projects": {
-    "G:\\Min enhet\\GitHub Repository\\KrypteringProg2-Client\\KrypteringProg2-Client.csproj": {
+    "D:\\GitRepositories\\KrypteringProg2-Client\\KrypteringProg2-Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Min enhet\\GitHub Repository\\KrypteringProg2-Client\\KrypteringProg2-Client.csproj",
+        "projectUniqueName": "D:\\GitRepositories\\KrypteringProg2-Client\\KrypteringProg2-Client.csproj",
         "projectName": "KrypteringProg2-Client",
-        "projectPath": "G:\\Min enhet\\GitHub Repository\\KrypteringProg2-Client\\KrypteringProg2-Client.csproj",
-        "packagesPath": "C:\\Users\\viktor.linden1\\.nuget\\packages\\",
-        "outputPath": "G:\\Min enhet\\GitHub Repository\\KrypteringProg2-Client\\obj\\",
+        "projectPath": "D:\\GitRepositories\\KrypteringProg2-Client\\KrypteringProg2-Client.csproj",
+        "packagesPath": "C:\\Users\\karlv\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepositories\\KrypteringProg2-Client\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\viktor.linden1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\karlv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
