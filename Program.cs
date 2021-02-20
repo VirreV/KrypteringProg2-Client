@@ -137,14 +137,15 @@ namespace KrypteringProg2_Client
                 while(true){
                     try{
                         user.Add(answer.Substring(0, answer.IndexOf('\t')));
-                        text.Add(answer.Substring(answer.IndexOf('\t') + 1, answer.IndexOf('\n')-answer.IndexOf('\t')));
+                        text.Add(answer.Substring(answer.IndexOf('\t') + 1, answer.IndexOf('\n')-(answer.IndexOf('\t')+1)));
                         answer = answer.Substring(answer.IndexOf('\n') + 1);
                     }catch{
                         break;
                     }
                 }
-                for(int i = 0; i < user.Count; i++)
-                Console.WriteLine("{0}:\n\t{1}", encrypter.Decrypt(user[i]), encrypter.Decrypt(text[i]));
+                for(int i = 0; i < user.Count; i++){
+                    Console.WriteLine("{0}:\n\t{1}", encrypter.Decrypt(user[i]), encrypter.Decrypt(text[i]));
+                }
             }
             Console.WriteLine();
             Console.WriteLine("Press enter to continue...");

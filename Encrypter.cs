@@ -12,7 +12,7 @@ namespace KrypteringProg2_Client
 {
     class Encrypter : Program
     {
-        private int[] key = { 1, 3, 3, 7, 4, 2, 0 };
+        int[] key = { 1, 3, 3, 7, 4, 2, 0 };
 
         public string Encrypt(string str){
             byte[] AsciiStr = new byte[str.Length];
@@ -24,7 +24,7 @@ namespace KrypteringProg2_Client
                     AsciiStr[i] = Convert.ToByte(temp);
                     i++;
                 }catch{
-                    System.Console.WriteLine(i);
+                    Console.WriteLine(i);
                 }
             }
             return System.Text.Encoding.ASCII.GetString(AsciiStr);
